@@ -1,0 +1,67 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+ margin: 1rem;
+ /* color: white; */
+}
+/* Lisätään html elementtiin flex flex */
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* muotoillaan parent-elementin lapset */
+.parent > * {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+/* kun kaventaa sivua, section ja sivupalkki voi mennä tosi pieneksi.  */
+.parent section, .parent aside 
+{
+    flex-basis: 0px;
+}
+
+header {
+background-color: #DF1428;
+}
+
+p {
+    color: white;
+    padding: 1rem;
+}
+
+
+section {
+background-color: #FFC209;
+padding-block-end: 1rem;
+
+/* leveydessä mukana myös padding ja margin.
+-> 50% ei */
+}
+
+
+nav {
+    background-color: #F38F2D;
+}
+
+article {
+    background-color: #7AC141;
+    margin-block-start: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    /* nää korvaa margin top, left, right */
+}
+
+aside {
+   background-color: #026FB4; 
+}
+
+footer {
+    background-color: #932B8E;
+    clear: both;
+}
+
+
